@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  background-color: #2a2a72;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#form {
+  width: 100%;
+  max-width: 700px;
+}
+#form input {
+  width: 100%;
+  display: block;
+  background-color: #4c2885;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+}
+#form input::placeholder {
+  color: #bbb;
+}
+#form input:focus {
+  outline: none;
+  transform: scale(0.98);
+}
+
+.card {
+  background-color: #4c2885;
+  max-width: 800px;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.image img {
+  border-radius: 50%;
+  border: 10px solid #2a2a72;
+  height: 150px;
+  width: 150px;
+}
+.user-info {
+  margin-left: 2rem;
+}
+.user-info h2 {
+  margin-top: 0;
+}
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+
+  max-width: 400px;
+}
+.user-info li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  background-color: #2a2a72;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
+}
+strong {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #212a72;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  #form {
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .user-info ul {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 500px;
+  }
+  .user-info li {
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
